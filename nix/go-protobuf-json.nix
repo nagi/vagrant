@@ -1,4 +1,4 @@
-{ buildGoModule, fetchFromGitHub }:
+{ buildGoModule, fetchFromGitHub, lib }:
 
 buildGoModule rec {
   pname = "go-protobuf-json";
@@ -12,5 +12,5 @@ buildGoModule rec {
   };
 
   modSha256 = "01wrk2qhrh74nkv6davfifdz7jq6fcl3snn4w2g7vr8p0incdlcf";
-  vendorSha256 = "1hx31gr3l2f0nc8316c9ipmk1xx435g732msr5b344rcfcfrlaxh";
+  vendorHash = "sha256-sCuaHXMsEzJWybqKcV4ZpPcw642JmTAQs8AJOvILo8M=";
 }

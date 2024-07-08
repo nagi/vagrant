@@ -1,4 +1,4 @@
-{ buildGoModule, fetchFromGitHub }:
+{ buildGoModule, fetchFromGitHub, lib }:
 
 buildGoModule rec {
   pname = "go-changelog";
@@ -11,7 +11,7 @@ buildGoModule rec {
     sha256 = "0z6ysz4x1rim09g9knbc5x5mrasfk6mzsi0h7jn8q4i035y1gg2j";
   };
 
-  vendorSha256 = "1pahh64ayr885kv9rd5i4vh4a6hi1w583wch9n1ncvnckznzsdbg";
+  vendorHash = "sha256-bzX97Z/MbmaDTZDxgQoPERpF4CaxtJz2LAhlr4iBUN0=";
 
   subPackages = [ "cmd/changelog-build" ];
 }
